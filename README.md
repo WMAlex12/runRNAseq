@@ -93,7 +93,7 @@ Please run this yourself to check for any updates on how to cite
 **runRNAseq**.
 
 ``` r
-print(citation('runRNAseq'), bibtex = TRUE)
+print(citation("runRNAseq"), bibtex = TRUE)
 #> To cite package 'runRNAseq' in publications use:
 #> 
 #>   WMAlex12 (2024). _runRNAseq_. doi:10.18129/B9.bioc.runRNAseq
