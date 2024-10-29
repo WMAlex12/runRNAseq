@@ -26,7 +26,7 @@ rstudioapi::navigateToFile(usethis::proj_path("dev", "02_git_github_setup.R"))
 ## Date: 2020-04-29
 
 ## This function sets all these defaults for you
-biocthis::use_bioc_description()
+biocthis::use_bioc_description() ## Plantilla que tiene un enfoque principal a CRAN
 ## However, you still need to edit parts of it manually
 rstudioapi::navigateToFile(usethis::proj_path("DESCRIPTION"))
 
@@ -48,19 +48,19 @@ devtools::build_readme()
 biocthis::use_bioc_news_md()
 
 ## Add information for users and contributors
-biocthis::use_bioc_coc()
-usethis::use_tidy_contributing()
-biocthis::use_bioc_support()
-biocthis::use_bioc_issue_template()
-biocthis::use_bioc_feature_request_template()
-biocthis::use_bioc_citation()
+biocthis::use_bioc_coc() # No modificar
+usethis::use_tidy_contributing() # Actualizar si es necesario
+biocthis::use_bioc_support() # Solicitar ayuda en bioconductor
+biocthis::use_bioc_issue_template() # Solicitud para recibir datos del error
+biocthis::use_bioc_feature_request_template() # Sugerir ideas
+biocthis::use_bioc_citation() # citado y a donde se va a enviar "revista"
 
 ## Add badges to the README.Rmd file
 usethis::use_lifecycle_badge("Experimental")
 biocthis::use_bioc_badges()
 ## NOTE: If your Bioconductor package is an experiment, annotation or workflow
 ## package, you will need to edit the resulting badge!
-usethis::use_github_actions_badge("check-bioc.yml")
+usethis::use_github_actions_badge("check-bioc.yml") # Workflow
 
 ## Enable using tests
 usethis::use_testthat()

@@ -1,0 +1,29 @@
+pkgVer <- function(pkg) {
+    if (!exists("meta") || is.null(meta)) meta <- packageDescription(pkg)
+    ver <- meta$Version
+    paste0('https://github.com/WMAlex12/runRNAseq/', pkg, ' - R package version ', ver)
+}
+
+c(
+
+    bibentry(bibtype="manual",
+        title = "runRNAseq",
+        author = personList(
+            as.person("WMAlex12")
+        ),
+        year = format(Sys.Date(), "%Y"),
+        url = "http://www.bioconductor.org/packages/runRNAseq",
+        note = pkgVer('runRNAseq'),
+        doi = '10.18129/B9.bioc.runRNAseq'
+    ),
+    bibentry(bibtype="article",
+        title = "runRNAseq",
+        author = personList(
+            as.person("WMAlex12")
+        ),
+        year = format(Sys.Date(), "%Y"),
+        journal = "bioRxiv",
+        doi = "10.1101/TODO",
+        url = "https://www.biorxiv.org/content/10.1101/TODO"
+    )
+)
